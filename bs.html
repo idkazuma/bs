@@ -91,284 +91,250 @@
             <dt>&lt;dl&gt;</dt>
             <dd>定義・説明リストを表す際に使用する</dd>
         </dl>
-        <ul>
 
-            <code>&lt;sample&gt;</code>
+        <code>&lt;sample&gt;</code>
 <pre>
 枠付き赤文字表示（左に表示されているような感じ）になります
 このホームページではタグやクラスなどを記述する時に使用していますが、使い方は人それぞれかと思います
 </pre>
 
-            <table class="table table-striped table-bordered table-condensed">
-                <thead>
-                    <tr><th>ヘッダ項目１</th><th>ヘッダ項目２</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>データ１－１</td><td>データ１－２</td></tr>
-                    <tr><td>データ２－１</td><td>データ２－２</td></tr>
-                    <tr><td>データ３－１</td><td>データ３－２</td></tr>
-                </tbody>
-            </table>
+        <table class="table table-striped table-bordered table-condensed">
+            <thead>
+                <tr><th>ヘッダ項目１</th><th>ヘッダ項目２</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>データ１－１</td><td>データ１－２</td></tr>
+                <tr><td>データ２－１</td><td>データ２－２</td></tr>
+                <tr><td>データ３－１</td><td>データ３－２</td></tr>
+            </tbody>
+        </table>
 
-            <p><i class="icon-glass"></i>icon-glass</p>
-            <button class="btn btn-primary"><i class="icon-envelope icon-white" style="margin-top: 1px;"></i> submit</button>
+        <p><i class="icon-glass"></i>icon-glass</p>
+        <button class="btn btn-primary"><i class="icon-envelope icon-white" style="margin-top: 1px;"></i> submit</button>
 
-            <form>
-                <label>ラベル</label>
-                <input type="text" class="span3" placeholder="入力欄">
-                <label class="checkbox">
-                    <input type="checkbox"> チェックボックス
-                </label>
+        <form>
+            <label>ラベル</label>
+            <input type="text" class="span3" placeholder="入力欄">
+            <label class="checkbox">
+                <input type="checkbox"> チェックボックス
+            </label>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <form class="form-inline">
+            <label>ラベル</label>
+            <input type="text" class="span3" placeholder="入力欄">
+            <label class="checkbox">
+                <input type="checkbox"> チェックボックス
+            </label>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+
+        <form class="form-search">
+            <input type="text" class="input-medium search-query">
+            <button type="submit" class="btn">Search</button>
+        </form>
+
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">ラベル</label>
+                <div class="controls">
+                    <input type="text" class="span3" placeholder="入力欄">
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox"> チェックボックス
+                    </label>
+                </div>
+            </div>
+            <div class="form-actions">
                 <button type="submit" class="btn">Submit</button>
-            </form>
+            </div>
+        </form>
 
-            <form class="form-inline">
-                <label>ラベル</label>
-                <input type="text" class="span3" placeholder="入力欄">
-                <label class="checkbox">
-                    <input type="checkbox"> チェックボックス
-                </label>
-                <button type="submit" class="btn">Submit</button>
-            </form>
-
-            <form class="form-search">
-                <input type="text" class="input-medium search-query">
-                <button type="submit" class="btn">Search</button>
-            </form>
-
-            <form class="form-horizontal">
+        <form class="form-horizontal">
+            <fieldset>
                 <div class="control-group">
-                    <label class="control-label">ラベル</label>
+                    <label class="control-label" for="input01">Text input</label>
                     <div class="controls">
-                        <input type="text" class="span3" placeholder="入力欄">
+                        <input type="text" class="input-xlarge" id="input01">
+                        <p class="help-block">入力に対しての説明文などを記述できます</p>
                     </div>
                 </div>
                 <div class="control-group">
+                    <label class="control-label" for="optionsCheckbox">Checkbox</label>
                     <div class="controls">
                         <label class="checkbox">
-                            <input type="checkbox"> チェックボックス
+                            <input type="checkbox" id="optionsCheckbox" value="option1">
+                            チェックボックスに対する説明など
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" id="optionsCheckbox" value="option2">
+                            チェックボックスに対する説明など
                         </label>
                     </div>
                 </div>
-                <div class="form-actions">
-                    <button type="submit" class="btn">Submit</button>
-                </div>
-            </form>
-
-            <form class="form-horizontal">
-                <fieldset>
-                    <div class="control-group">
-                        <label class="control-label" for="input01">Text input</label>
-                        <div class="controls">
-                            <input type="text" class="input-xlarge" id="input01">
-                            <p class="help-block">入力に対しての説明文などを記述できます</p>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label" for="optionsCheckbox">Checkbox</label>
-                        <div class="controls">
-                            <label class="checkbox">
-                                <input type="checkbox" id="optionsCheckbox" value="option1">
-                                チェックボックスに対する説明など
-                            </label>
-                            <label class="checkbox">
-                                <input type="checkbox" id="optionsCheckbox" value="option2">
-                                チェックボックスに対する説明など
-                            </label>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label">Radio buttons</label>
-                        <div class="controls">
-                            <label class="radio">
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                ラジオボタンに対する説明など
-                            </label>
-                            <label class="radio">
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                ラジオボタンに対する説明など
-                            </label>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label" for="select01">Select list</label>
-                        <div class="controls">
-                            <select id="select01">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label" for="multiSelect">Multicon-select</label>
-                        <div class="controls">
-                            <select multiple="multiple" id="multiSelect">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label" for="fileInput">File input</label>
-                        <div class="controls">
-                            <input class="input-file" id="fileInput" type="file">
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <label class="control-label" for="textarea">Textarea</label>
-                        <div class="controls">
-                            <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
-                        </div>
-                    </div>
-                </fieldset>
-            </form>
-
-            <form class="form-horizontal">
                 <div class="control-group">
-                    <label class="control-label" for="focusedInput">Focused input</label>
+                    <label class="control-label">Radio buttons</label>
                     <div class="controls">
-                        <input class="input-xlarge focused" id="focusedInput" type="text" value="This is focused…">
-                    </div>
-                </div>
-                <div class="control-group">
-                    <label class="control-label">Uneditable input</label>
-                    <div class="controls">
-                        <span class="input-xlarge uneditable-input">Some value here</span>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <label class="control-label" for="disabledInput">Disabled input</label>
-                    <div class="controls">
-                        <input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="Disabled input here…" disabled>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <label class="control-label" for="optionsCheckbox2">Disabled checkbox</label>
-                    <div class="controls">
-                        <label class="checkbox">
-                            <input type="checkbox" id="optionsCheckbox2" value="option1" disabled>
-                            This is a disabled checkbox
+                        <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            ラジオボタンに対する説明など
+                        </label>
+                        <label class="radio">
+                            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                            ラジオボタンに対する説明など
                         </label>
                     </div>
                 </div>
-            </form>
-
-            <form class="form-horizontal">
-                <div class="control-group warning">
-                    <label class="control-label" for="inputWarning">Input with warning</label>
+                <div class="control-group">
+                    <label class="control-label" for="select01">Select list</label>
                     <div class="controls">
-                        <input type="text" id="inputWarning">
-                        <span class="help-inline">warning</span>
+                        <select id="select01">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
                     </div>
                 </div>
-                <div class="control-group error">
-                    <label class="control-label" for="inputError">Input with error</label>
+                <div class="control-group">
+                    <label class="control-label" for="multiSelect">Multicon-select</label>
                     <div class="controls">
-                        <input type="text" id="inputError">
-                        <span class="help-inline">error</span>
+                        <select multiple="multiple" id="multiSelect">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
                     </div>
                 </div>
-                <div class="control-group success">
-                    <label class="control-label" for="inputSuccess">Input with success</label>
+                <div class="control-group">
+                    <label class="control-label" for="fileInput">File input</label>
                     <div class="controls">
-                        <input type="text" id="inputSuccess">
-                        <span class="help-block">success</span>
+                        <input class="input-file" id="fileInput" type="file">
                     </div>
                 </div>
-            </form>
+                <div class="control-group">
+                    <label class="control-label" for="textarea">Textarea</label>
+                    <div class="controls">
+                        <textarea class="input-xlarge" id="textarea" rows="3"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
 
-            <form class="form-horizontal">
-                <div class="control-group">
-                    <label class="control-label">Form grid sizes</label>
-                    <div class="controls"><input class="span1" type="text" placeholder="span1"></div>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label" for="focusedInput">Focused input</label>
+                <div class="controls">
+                    <input class="input-xlarge focused" id="focusedInput" type="text" value="This is focused…">
                 </div>
-                <div class="control-group">
-                    <div class="controls"><input class="span2" type="text" placeholder="span2"></div>
+            </div>
+            <div class="control-group">
+                <label class="control-label">Uneditable input</label>
+                <div class="controls">
+                    <span class="input-xlarge uneditable-input">Some value here</span>
                 </div>
-                <div class="control-group">
-                    <div class="controls"><input class="span3" type="text" placeholder="span3"></div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="disabledInput">Disabled input</label>
+                <div class="controls">
+                    <input class="input-xlarge disabled" id="disabledInput" type="text" placeholder="Disabled input here…" disabled>
                 </div>
-                <div class="control-group">
-                    <div class="controls"><input class="input-mini" type="text" placeholder="input-mini"></div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="optionsCheckbox2">Disabled checkbox</label>
+                <div class="controls">
+                    <label class="checkbox">
+                        <input type="checkbox" id="optionsCheckbox2" value="option1" disabled>
+                        This is a disabled checkbox
+                    </label>
                 </div>
-                <div class="control-group">
-                    <div class="controls"><input class="input-small" type="text" placeholder="input-small"></div>
-                </div>
-                <div class="control-group">
-                    <div class="controls"><input class="input-medium" type="text" placeholder="input-medium"></div>
-                </div>
-                <div class="control-group">
-                    <div class="controls"><input class="input-large" type="text" placeholder="input-large"></div>
-                </div>
-                <div class="control-group">
-                    <div class="controls"><input class="input-xlarge" type="text" placeholder="input-xlarge"></div>
-                </div>
-                <div class="control-group">
-                    <div class="controls"><input class="input-xxlarge" type="text" placeholder="input-xxlarge"></div>
-                </div>
-            </form>
+            </div>
+        </form>
 
+        <form class="form-horizontal">
+            <div class="control-group warning">
+                <label class="control-label" for="inputWarning">Input with warning</label>
+                <div class="controls">
+                    <input type="text" id="inputWarning">
+                    <span class="help-inline">warning</span>
+                </div>
+            </div>
+            <div class="control-group error">
+                <label class="control-label" for="inputError">Input with error</label>
+                <div class="controls">
+                    <input type="text" id="inputError">
+                    <span class="help-inline">error</span>
+                </div>
+            </div>
+            <div class="control-group success">
+                <label class="control-label" for="inputSuccess">Input with success</label>
+                <div class="controls">
+                    <input type="text" id="inputSuccess">
+                    <span class="help-block">success</span>
+                </div>
+            </div>
+        </form>
+
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label">Form grid sizes</label>
+                <div class="controls"><input class="span1" type="text" placeholder="span1"></div>
+            </div>
+            <div class="control-group">
+                <div class="controls"><input class="span2" type="text" placeholder="span2"></div>
+            </div>
+            <div class="control-group">
+                <div class="controls"><input class="span3" type="text" placeholder="span3"></div>
+            </div>
+            <div class="control-group">
+                <div class="controls"><input class="input-mini" type="text" placeholder="input-mini"></div>
+            </div>
+            <div class="control-group">
+                <div class="controls"><input class="input-small" type="text" placeholder="input-small"></div>
+            </div>
+            <div class="control-group">
+                <div class="controls"><input class="input-medium" type="text" placeholder="input-medium"></div>
+            </div>
+            <div class="control-group">
+                <div class="controls"><input class="input-large" type="text" placeholder="input-large"></div>
+            </div>
+            <div class="control-group">
+                <div class="controls"><input class="input-xlarge" type="text" placeholder="input-xlarge"></div>
+            </div>
+            <div class="control-group">
+                <div class="controls"><input class="input-xxlarge" type="text" placeholder="input-xxlarge"></div>
+            </div>
+        </form>
+
+        <div class="btn-group">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">4</button>
+        </div>
+        <div class="btn-toolbar">
             <div class="btn-group">
                 <button class="btn">1</button>
                 <button class="btn">2</button>
                 <button class="btn">3</button>
-                <button class="btn">4</button>
             </div>
-            <div class="btn-toolbar">
-                <div class="btn-group">
-                    <button class="btn">1</button>
-                    <button class="btn">2</button>
-                    <button class="btn">3</button>
-                </div>
-                <div class="btn-group">
-                    <button class="btn">4</button>
-                    <button class="btn">5</button>
-                </div>
-                <div class="btn-group">
-                    <button class="btn">6</button>
-                </div>
-            </div>
-
-            <div class="btn-toolbar">
-                <div class="btn-group">
-                    <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </div>
-                <div class="btn-group dropup">
-                    <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </div>
-                <div class="btn-group">
-                    <button class="btn btn-large btn-warning dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-                    <ul class="dropdown-menu pull-right">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </div>
-            </div>
-
             <div class="btn-group">
-                <button class="btn btn-warning">Action</button>
-                <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+            </div>
+            <div class="btn-group">
+                <button class="btn">6</button>
+            </div>
+        </div>
+
+        <div class="btn-toolbar">
+            <div class="btn-group">
+                <button class="btn dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
                 <ul class="dropdown-menu">
                     <li><a href="#">Action</a></li>
                     <li><a href="#">Another action</a></li>
@@ -377,189 +343,222 @@
                     <li><a href="#">Separated link</a></li>
                 </ul>
             </div>
-
-            <ul class="breadcrumb">
-                <li class="active">Home</li>
-            </ul>
-            <ul class="breadcrumb">
-                <li><a href="#">Home</a> <span class="divider">/</span></li>
-                <li class="active">Library</li>
-            </ul>
-            <ul class="breadcrumb">
-                <li><a href="#">Home</a> <span class="divider">/</span></li>
-                <li><a href="#">Library</a> <span class="divider">/</span></li>
-                <li class="active">Data</li>
-            </ul>
-
-            <div class="pagination">
-                <ul>
-                    <li class="disabled"><a href="#">&laquo;</a></li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">&raquo;</a></li>
+            <div class="btn-group dropup">
+                <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
                 </ul>
             </div>
-            <div class="pagination">
-                <ul>
-                    <li><a href="#">&laquo;</a></li>
-                    <li><a href="#">10</a></li>
-                    <li class="active"><a href="#">11</a></li>
-                    <li><a href="#">12</a></li>
-                    <li><a href="#">&raquo;</a></li>
+            <div class="btn-group">
+                <button class="btn btn-large btn-warning dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+                <ul class="dropdown-menu pull-right">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
                 </ul>
             </div>
-            <div class="pagination">
-                <ul>
-                    <li><a href="#">&laquo;</a></li>
-                    <li class="active"><a href="#">10</a></li>
-                    <li class="disabled"><a href="#">...</a></li>
-                    <li><a href="#">20</a></li>
-                    <li><a href="#">&raquo;</a></li>
-                </ul>
-            </div>
-            <div class="pagination pagination-centered">
-                <ul>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                </ul>
-            </div>
-            <div class="pagination pagination-right">
-                <ul>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                </ul>
-            </div>
+        </div>
 
-            <ul class="pager">
-                <li><a href="#">Previous</a></li>
-                <li><a href="#">Next</a></li>
+        <div class="btn-group">
+            <button class="btn btn-warning">Action</button>
+            <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
             </ul>
-            <ul class="pager">
-                <li class="previous"><a href="#">&larr; Older</a></li>
-                <li class="next"><a href="#">Newer &rarr;</a></li>
+        </div>
+
+        <ul class="breadcrumb">
+            <li class="active">Home</li>
+        </ul>
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a> <span class="divider">/</span></li>
+            <li class="active">Library</li>
+        </ul>
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a> <span class="divider">/</span></li>
+            <li><a href="#">Library</a> <span class="divider">/</span></li>
+            <li class="active">Data</li>
+        </ul>
+
+        <div class="pagination">
+            <ul>
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">&raquo;</a></li>
             </ul>
+        </div>
+        <div class="pagination">
+            <ul>
+                <li><a href="#">&laquo;</a></li>
+                <li><a href="#">10</a></li>
+                <li class="active"><a href="#">11</a></li>
+                <li><a href="#">12</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+        <div class="pagination">
+            <ul>
+                <li><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">10</a></li>
+                <li class="disabled"><a href="#">...</a></li>
+                <li><a href="#">20</a></li>
+                <li><a href="#">&raquo;</a></li>
+            </ul>
+        </div>
+        <div class="pagination pagination-centered">
+            <ul>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
+        <div class="pagination pagination-right">
+            <ul>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+        </div>
 
-            <span class="label">Default</span>
-            <span class="label label-success">Success</span>
-            <span class="label label-warning">Warning</span>
-            <span class="label label-important">Important</span>
-            <span class="label label-info">Info</span>
-            <span class="label label-inverse">Inverse</span>
+        <ul class="pager">
+            <li><a href="#">Previous</a></li>
+            <li><a href="#">Next</a></li>
+        </ul>
+        <ul class="pager">
+            <li class="previous"><a href="#">&larr; Older</a></li>
+            <li class="next"><a href="#">Newer &rarr;</a></li>
+        </ul>
 
-            <span class="badge">1</span>
-            <span class="badge badge-success">2</span>
-            <span class="badge badge-warning">4</span>
-            <span class="badge badge-important">6</span>
-            <span class="badge badge-info">8</span>
-            <span class="badge badge-inverse">10</span>
+        <span class="label">Default</span>
+        <span class="label label-success">Success</span>
+        <span class="label label-warning">Warning</span>
+        <span class="label label-important">Important</span>
+        <span class="label label-info">Info</span>
+        <span class="label label-inverse">Inverse</span>
 
-            <div class="hero-unit">
-                <h1>Twitter Bootstrapの使い方</h1>
-                <p>Twitter Bootstrapの使い方をサンプルもつけながら説明していきます。<br>
-                下記説明以外にも機能はありますが詳しく知りたい方は本家ページを参照して下さい。</p>
+        <span class="badge">1</span>
+        <span class="badge badge-success">2</span>
+        <span class="badge badge-warning">4</span>
+        <span class="badge badge-important">6</span>
+        <span class="badge badge-info">8</span>
+        <span class="badge badge-inverse">10</span>
+
+        <div class="hero-unit">
+            <h1>Twitter Bootstrapの使い方</h1>
+            <p>Twitter Bootstrapの使い方をサンプルもつけながら説明していきます。<br>
+            下記説明以外にも機能はありますが詳しく知りたい方は本家ページを参照して下さい。</p>
+        </div>
+
+        <div class="row">
+            <div class="span9">
+                <ul class="thumbnails">
+                    <li class="span3">
+                    <a href="#" class="thumbnail"><img src="http://localhost/twitterbootstrap/img_260_180.png" alt=""></a>
+                    </li>
+                    <li class="span3">
+                    <a href="#" class="thumbnail"><img src="http://localhost/twitterbootstrap/img_260_180_2.png" alt=""></a>
+                    </li>
+                    <li class="span3">
+                    <a href="#" class="thumbnail"><img src="http://localhost/twitterbootstrap/img_260_180_3.png" alt=""></a>
+                    </li>
+                    <li class="span3">
+                    <a href="#" class="thumbnail"><img src="http://localhost/twitterbootstrap/img_260_180_4.png" alt=""></a>
+                    </li>
+                </ul>
             </div>
-
-            <div class="row">
-                <div class="span9">
-                    <ul class="thumbnails">
-                        <li class="span3">
-                        <a href="#" class="thumbnail"><img src="http://localhost/twitterbootstrap/img_260_180.png" alt=""></a>
-                        </li>
-                        <li class="span3">
-                        <a href="#" class="thumbnail"><img src="http://localhost/twitterbootstrap/img_260_180_2.png" alt=""></a>
-                        </li>
-                        <li class="span3">
-                        <a href="#" class="thumbnail"><img src="http://localhost/twitterbootstrap/img_260_180_3.png" alt=""></a>
-                        </li>
-                        <li class="span3">
-                        <a href="#" class="thumbnail"><img src="http://localhost/twitterbootstrap/img_260_180_4.png" alt=""></a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="span3">
-                </div>
+            <div class="span3">
             </div>
+        </div>
 
-            <div class="row">
-                <div class="span6">
-                    <ul class="thumbnails">
-                        <li class="span3">
-                        <div class="thumbnail">
-                            <img src="http://localhost/twitterbootstrap/img_260_180.png" alt="">
-                            <div class="caption">
-                                <h5>タイトル</h5>
-                                <p>サムネイルに説明書きを付けるとこのような表示になります。ボタン表示も以下の通りに可能です。</p>
-                                <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
-                            </div>
+        <div class="row">
+            <div class="span6">
+                <ul class="thumbnails">
+                    <li class="span3">
+                    <div class="thumbnail">
+                        <img src="http://localhost/twitterbootstrap/img_260_180.png" alt="">
+                        <div class="caption">
+                            <h5>タイトル</h5>
+                            <p>サムネイルに説明書きを付けるとこのような表示になります。ボタン表示も以下の通りに可能です。</p>
+                            <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
                         </div>
-                        </li>
-                        <li class="span3">
-                        <div class="thumbnail">
-                            <img src="http://localhost/twitterbootstrap/img_260_180.png" alt="">
-                            <div class="caption">
-                                <h5>タイトル</h5>
-                                <p>高さは自動的に調整されるようですね。</p>
-                                <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
-                            </div>
+                    </div>
+                    </li>
+                    <li class="span3">
+                    <div class="thumbnail">
+                        <img src="http://localhost/twitterbootstrap/img_260_180.png" alt="">
+                        <div class="caption">
+                            <h5>タイトル</h5>
+                            <p>高さは自動的に調整されるようですね。</p>
+                            <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
                         </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="span6">
-                </div>
+                    </div>
+                    </li>
+                </ul>
             </div>
+            <div class="span6">
+            </div>
+        </div>
 
-            <div class="alert"></div>を指定する事により、アラート表示されます
-            class="alert-block"を指定すると、paddingが若干広めに取られたアラート表示が行われます
-            <h>タグにclass="alert-heading"を指定すると、タイトル表示されます
-            色が未指定の場合は、デフォルト色で表示されます
-            <div class="alert">
-                <button class="close" data-dismiss="alert">&times;</button>
-                <strong>Alert！</strong> シンプルなアラート表示例です
-            </div>
-            <div class="alert alert-block">
-                <a class="close" data-dismiss="alert" href="#">&times;</a>
-                <h4 class="alert-heading">Alert！</h4>
-                paddingが若干広めに取られた指定も可能です<br>また、タイトルを付けたアラート表示も可能です
-            </div>
-            <div class="alert">
-                <button class="close" data-dismiss="alert">&times;</button>
-                <strong>色指定</strong> 指定無しでデフォルト色
-            </div>
-            <div class="alert alert-error">
-                <button class="close" data-dismiss="alert">&times;</button>
-                <strong>色指定</strong> alert-error指定
-            </div>
-            <div class="alert alert-success">
-                <button class="close" data-dismiss="alert">&times;</button>
-                <strong>色指定</strong> alert-success指定
-            </div>
-            <div class="alert alert-info">
-                <button class="close" data-dismiss="alert">&times;</button>
-                <strong>色指定</strong> alert-info指定
-            </div>
+        <div class="alert"></div>を指定する事により、アラート表示されます
+        class="alert-block"を指定すると、paddingが若干広めに取られたアラート表示が行われます
+        <h>タグにclass="alert-heading"を指定すると、タイトル表示されます
+        色が未指定の場合は、デフォルト色で表示されます
+        <div class="alert">
+            <button class="close" data-dismiss="alert">&times;</button>
+            <strong>Alert！</strong> シンプルなアラート表示例です
+        </div>
+        <div class="alert alert-block">
+            <a class="close" data-dismiss="alert" href="#">&times;</a>
+            <h4 class="alert-heading">Alert！</h4>
+            paddingが若干広めに取られた指定も可能です<br>また、タイトルを付けたアラート表示も可能です
+        </div>
+        <div class="alert">
+            <button class="close" data-dismiss="alert">&times;</button>
+            <strong>色指定</strong> 指定無しでデフォルト色
+        </div>
+        <div class="alert alert-error">
+            <button class="close" data-dismiss="alert">&times;</button>
+            <strong>色指定</strong> alert-error指定
+        </div>
+        <div class="alert alert-success">
+            <button class="close" data-dismiss="alert">&times;</button>
+            <strong>色指定</strong> alert-success指定
+        </div>
+        <div class="alert alert-info">
+            <button class="close" data-dismiss="alert">&times;</button>
+            <strong>色指定</strong> alert-info指定
+        </div>
 
-            <div class="progress">
-                <div class="bar" style="width: 60%;"></div>
-            </div>
-            <div class="progress progress-striped">
-                <div class="bar" style="width: 20%;"></div>
-            </div>
-            <div class="progress progress-striped active">
-                <div class="bar" style="width: 40%;"></div>
-            </div>
+        <div class="progress">
+            <div class="bar" style="width: 60%;"></div>
+        </div>
+        <div class="progress progress-striped">
+            <div class="bar" style="width: 20%;"></div>
+        </div>
+        <div class="progress progress-striped active">
+            <div class="bar" style="width: 40%;"></div>
+        </div>
 
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-            <script src="js/bootstrap.min.js"></script>
-        </body>
-    </html>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
 
